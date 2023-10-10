@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <unistd.h>
+#include "_putchar.c"
 /**
 *print_alphabet - Print the alphabet in lowercase, followed by a new line.
 *
