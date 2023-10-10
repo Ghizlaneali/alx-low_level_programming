@@ -3,19 +3,19 @@
 
 /**
  * print_alphabet - Entry point
- * Return:0
+ * Return:Always 0
  */
 
 void print_alphabet(void)
 {
-	char c = 'a';
+	char ch = 'a';
 
-	while (c <= 'z')
+	while (ch <= 'z')
 	{
-		_putchar(c);
-		c++;
+		putchar(ch);
+		ch++;
 
 	}
-	_putchar('\n');
+	putchar('\n');
 
 }
