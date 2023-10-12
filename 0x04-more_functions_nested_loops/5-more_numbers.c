@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * more_numbers - prints the numbers, from 0 to 14, 10 times
- * , followed by a new line.
- *
- */
+* more_numbers - prints the numbers, from 0 to 14, 10 times
+* , followed by a new line.
+*
+*/
 
 void more_numbers(void)
 {
@@ -16,7 +16,6 @@ void more_numbers(void)
 		{
 			_putchar(number);
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
-	
 }
