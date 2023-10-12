@@ -7,20 +7,19 @@
 
 void more_numbers(void)
 {
-	int i;
-	int number;
+	int number, tens, units, row;
 
-	i = 0;
-
-	while (i <= 10)
+	for (row = 1; row <= 10; row++)
 	{
-		number = 0;
-		while (number <= 14)
+		for (number = 0; number <= 14; number++)
 		{
-			_putchar(number);
-			number++;
+			tens = number / 10;
+			units = number % 10;
+			if (number > 9)
+				_putchar(tens + '0');
+
+			_putchar(units + '0');
 		}
 		_putchar('\n');
-		i++;
 	}
 }
