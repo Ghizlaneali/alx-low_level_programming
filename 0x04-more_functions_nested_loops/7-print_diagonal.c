@@ -2,10 +2,8 @@
 
 /**
  * print_diagonal - draws a diagonal line on the terminal.
- * @n: the times the diagonal line is printed.
+ * @n: the number of times the diagonal line is printed.
  */
-
-void print_diagonal(int n)
 void print_diagonal(int n)
 {
 	int i, j;
@@ -16,9 +14,8 @@ void print_diagonal(int n)
 		{
 			_putchar(' ');
 		}
-		_putchar(92);
-		if (i < (n - 1))
-			_putchar('\n');
-	}
+	_putchar('\\');
 	_putchar('\n');
+	}
 }
+
