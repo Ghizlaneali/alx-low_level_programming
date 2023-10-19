@@ -9,24 +9,12 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int str1 = 0, str2 = 0;
+	int i = 0, j;
 
-	while (*(dest + str1) != '\0')
-	{
-		str1++;
-	}
-	while (str2 > n)
-	{
-		*(dest + str1) = *(src + str2);
-		if (*(src + str2) == '\0')
-		{
-			break;
-		}
-		str1++;
-		str2++;
-	}
-
-	dest[str1] = '\0';
-
-	return dest;
+	while (dest[i] != '\0')
+		i++;
+	for (j = 0; j < n && src[j] != '\0'; j++, i++)
+		dest[i] = src[j];
+	dest[i] = '\0';
+	return (dest);
 }
