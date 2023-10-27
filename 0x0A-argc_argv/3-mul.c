@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - multiplies two numbers.
  *
  * @argc: incoming argument
  * @argv: incoming argument
@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 
 	int total;
 
-	if (argc < 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
