@@ -5,11 +5,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	size_t a, b, i = 0;
+	size_t i = 0;
 	char *d;
-
-	a = strlen(s1);
-	b = strlen(s2);
 
 	d = (char *)malloc(sizeof (s1) + sizeof (s2) + 1);
 
