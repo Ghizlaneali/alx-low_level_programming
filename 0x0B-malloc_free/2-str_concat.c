@@ -12,19 +12,19 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	while (*s1 != '\0')
+	while (*s1 != NULL)
 	{
 		d[i] = *s1;
 		s1++;
 		i++;
 	}
-	while (*s2 != '\0')
+	while (*s2 != NULL)
 	{
 		d[i] = *s2;
 		s2++;
 		i++;
 	}
-	d[i] = '\0';
+	d[i] = NULL;
 
 	return (d);
 }
