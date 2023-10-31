@@ -5,16 +5,27 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *cat;
-	unsigned int space = strlen(s1) + strlen(s2) + 1;
+	size_t a, b, i = 0;
+	char *d;
 
-	if (cat == NULL)
+	a = strlen(s1);
+	b = strlen(s2);
+
+	d = (char *)malloc(sizeof (s1) + sizeof (s2) + 1);
+
+	while (*s1 != '\0')
 	{
-		return (NULL);
+		d[i] = *s1;
+		s1++;
+		i++;
 	}
-	if (cat != NULL)
+	while (*s2 != '\0')
 	{
-		cat = (char *)malloc(space);
+		d[i] = *s2;
+		s2++;
+		i++;
 	}
-	return (cat);
+	d[i] = '\0';
+
+	return (d);
 }
