@@ -13,7 +13,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	size_t i = 0;
+	unsigned int i = 0;
 
 	char *d = (char *)malloc(sizeof(s1) + sizeof(s2) + 1);
 
