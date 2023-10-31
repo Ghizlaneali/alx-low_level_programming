@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /**
- * create_array - entry point.
- * @size : size of array.
- * @c : characters in array.
- * Return : pointer to array, NULL if the size iS 0.
+ * create_array - Entry point
+ *@size: size of the array
+ *@c: character
+ * Return: a pointer to the array, or NULL if it fails
  */
 
 char *create_array(unsigned int size, char c)
