@@ -1,12 +1,10 @@
 #include <stdio.h>
-
 /**
- * main - entry point
- *
- * Return : Always 0.
+ * main - prints the name of the file program was compiled from
+ * Return: Always 0
  */
 
-void main()
+int main(void)
 {
 	printf("%s\n", __FILE__);
 	return (0);
