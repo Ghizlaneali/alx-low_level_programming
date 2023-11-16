@@ -1,26 +1,25 @@
-#include "lists.h"
 #include <stdio.h>
+#include "lists.h"
 
 /**
- * print_list - prints the linked list
- * @h: pointer to the structure
- * Return: return the length of the list
+ * print_list - function with one argument
+ * @h: const pointer type
+ *
+ * Description: prints all the elements of a list_t list
+ * Return: number of nodes
  */
-
 size_t print_list(const list_t *h)
 {
-	size_t length = 0;
+	unsigned int count = 0;
 
-	if (h == NULL)
-		return (0);
 	while (h != NULL)
 	{
-		if (!h->str)
-			printf("[0] %s\n", "(nil)");
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
 		else
 			printf("[%d] %s\n", h->len, h->str);
 		h = h->next;
-		length++;
+		count++;
 	}
-	return (length);
+	return (count);
 }
